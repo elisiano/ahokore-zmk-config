@@ -31,34 +31,34 @@ behaviors {
     };
 
     combos {
-    compatible = "zmk,combos";
-    combo_del {
-        timeout-ms = <50>;
-        key-positions = <18 19>;
-        bindings = <&kp DEL>;
-        layers = <1>;
-    };
-    combo_bspc {
-        timeout-ms = <50>;
-        key-positions = <8 9>;
-        bindings = <&kp BKSP>;
-        layers = <0 1>;
-    };
-    combo_tab {
-        timeout-ms = <50>;
-        key-positions = <0 1>;
-        bindings = <&kp TAB>;
-        layers = <0>;
+        compatible = "zmk,combos";
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp DEL>;
+            layers = <1>;
+        };
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp BKSP>;
+            layers = <0 1>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp TAB>;
+            layers = <0>;
 
-    };
-    combo_esc {
-        timeout-ms = <50>;
-        key-positions = <1 2>;
-        bindings = <&kp ESC>;
-        layers = <0>;
+        };
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
+            bindings = <&kp ESC>;
+            layers = <0>;
 
+        };
     };
-};
 
 };
         keymap {
@@ -74,10 +74,9 @@ behaviors {
                         bindings = <
    &kp Q      &kp D      &kp R       &kp W       &kp B    &kp J     &kp F        &kp U       &kp P        &kp SQT
    &hm LGUI A &hm LALT S &hm LCTRL H &hm LSHFT T &kp G    &kp Y     &hm RSHFT N  &hm RCTRL E &hm LALT O   &hm RGUI I
-   &kp Z      &kp X      &kp M       &kp C       &kp V    &kp K     &kp L        &kp COMMA   &mt RALT DOT &kp FSLH
+   &kp Z      &kp RALT X &kp M       &kp C       &kp V    &kp K     &kp L        &kp COMMA   &mt RALT DOT &kp FSLH
               &tm MEDR ESC &tm NAVR SPACE &tm MOUR TAB    &tm NSSL RET &tm NSL BSPC &tm FUNL DEL
                         >;
-
                 };
 
                 navr_layer {
